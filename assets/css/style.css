@@ -1,0 +1,21 @@
+body{
+    background-image: url("../images/asanoha-400px.png");
+}
+
+#jumbotronhead{
+   background-image: url("../images/background1.jpg");
+   background-size:cover; 
+   background-repeat: no-repeat;
+   background-position: center;
+   padding-top: 150px;
+   padding-bottom: 170px;
+   text-align: center;
+}
+
+
+
+.card{
+    align-content: center;
+    margin-left: 300px;
+    width: 100px;
+}

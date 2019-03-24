@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Cassandra Birkbeck">
+    <title>GoT Quiz</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/got icon.jpg">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</head>
+
+<body>
+    <!--Initial Game Header and Background Image-->
+
+
+    <div class="jumbotron col-md-12" id="jumbotronhead">
+        <h1 class="display-4">Game of Thrones Trivia Game</h1>
+        <p class="lead">Think you've got what it takes to sit the Iron Throne? Answer the following questions before
+            time runs out to see if you're smart enough. Good luck!</p>
+        <hr class="my-4">
+        <a class="btn btn-dark btn-lg" href="#" role="button">Begin Quiz</a>
+    </div>
+
+    <!-- Game Question-->
+
+    <div class="row col-sm-6 col-md-10 col-lg-10">
+        <div class="card" style="width: 50rem;">
+            <img src="..." class="card-img-top" alt="Placeholder & Answer Images" id ="image">
+            <div class="card-body" id= "questions">
+                <h5 class="card-title" id ="time"></h5>
+                <p class="card-text" id= "question"></p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio3">C </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                        value="option4">
+                    <label class="form-check-label" for="inlineRadio3">D </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Results -->
+    <div class= "container row text-center" id = "results">
+        <div class = "col-sm-6 col-md-10 col-lg-10">
+                <div id= "resultText"></div>
+                <div id ="correctAnswers"></div>
+                <div id= "incorrectAnswers"></div>
+                <a class="btn btn-dark btn-lg" href="#" role="button">Restart Quiz</a>
+        </div>
+        
+    </div>
+</body>
+
+</html>
