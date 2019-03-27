@@ -19,3 +19,12 @@ body{
     margin-left: 300px;
     width: 100px;
 }
+
+#answerImg{
+    size: 300px;
+}
+
+#results{
+    background: white;
+    text-align: center;
+}
