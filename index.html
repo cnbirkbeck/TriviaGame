@@ -26,40 +26,34 @@
         <p class="lead">Think you've got what it takes to sit the Iron Throne? Answer the following questions before
             time runs out to see if you're smart enough. Good luck!</p>
         <hr class="my-4">
-        <a class="btn btn-dark btn-lg" href="#" role="button">Begin Quiz</a>
+        <a class="btn btn-dark btn-lg" href="#" role="button" id = "beginbtn">Begin Quiz</a>
     </div>
 
-    <!-- Game Question-->
+    <!-- Game Question Card-->
 
     <div class="row col-sm-6 col-md-10 col-lg-10">
-        <div class="card" style="width: 50rem;">
-            <img src="..." class="card-img-top" alt="Placeholder & Answer Images" id ="image">
+        <div class="card" style="width: 50rem;" id="questionArea">
+            <img src="assets/images/got title card.jpg" class="card-img-top" alt="GoT Opening Title Images" id ="image">
             <div class="card-body" id= "questions">
                 <h5 class="card-title" id ="time"></h5>
                 <p class="card-text" id= "question"></p>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1">
-                    <label class="form-check-label" for="inlineRadio1">A</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                        value="option2">
-                    <label class="form-check-label" for="inlineRadio2">B</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                        value="option3">
-                    <label class="form-check-label" for="inlineRadio3">C </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
-                        value="option4">
-                    <label class="form-check-label" for="inlineRadio3">D </label>
-                </div>
+                <div class="list" id = "inlineRadio"></div>
+                    
             </div>
         </div>
     </div>
+
+    <!--Answer Card-->
+    <div class="row col-sm-6 col-md-10 col-lg-10">
+            <div class="card" style="width: 50rem;" id="answerArea">
+                    <img src="" class="card-img-top" alt="Answer Gif" id= "answerImg">
+                    <div class="card-body">
+                      <p class="card-title" id ="answer"></p>
+                      <p class="card-text" id ="text"></p>
+                    </div>
+                  </div>
+    </div>
+
 
     <!--Results -->
     <div class= "container row text-center" id = "results">
@@ -67,7 +61,8 @@
                 <div id= "resultText"></div>
                 <div id ="correctAnswers"></div>
                 <div id= "incorrectAnswers"></div>
-                <a class="btn btn-dark btn-lg" href="#" role="button">Restart Quiz</a>
+                <div id= "unanswered"></div>
+                <a class="btn btn-dark btn-lg" id = "restartbtn" href="#" role="button">Restart Quiz</a>
         </div>
         
     </div>
